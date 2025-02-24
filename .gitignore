@@ -1,0 +1,35 @@
+# Ignore all node_modules folders recursively
+node_modules/
+.angular/
+
+Hooks/node_modules/
+decorator/node_modules/
+forms/node_modules/
+dataBinding/node_modules/
+
+Hooks/.angular/
+decorator/.angular/
+forms/.angular/
+dataBinding/.angular/
+
+
+
+# Ignore build and compiled files
+dist/
+out-tsc/
+coverage/
+
+# Ignore environment files
+src/environments/environment*.ts
+
+# Ignore logs and temporary files
+npm-debug.log*
+yarn-debug.log*
+*.log
+temp/
+
+# Ignore editor/IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo

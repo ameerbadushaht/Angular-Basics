@@ -1,0 +1,44 @@
+
+    <form #tempForm="ngForm" (ngSubmit)="onSubmit()">
+
+        <label for="name">Name : </label>
+        <input type="text"  name="name" [(ngModel)]="templateForm.name" placeholder="Enter your name" required #nameRef="ngModel">
+    <br>
+
+    <p *ngIf="nameRef.invalid && nameRef.touched" style="color: red;">First name is required</p>
+
+        <label >Email : </label>
+        <input type="email"  name="email" [(ngModel)]="templateForm.email" placeholder="Enter your email" required email>
+    <br>
+        <label for="password">Password: </label>
+       
+        <input
+              type="password"
+              name="password"
+              ngModel
+              appPasswordStrength
+              #password="ngModel"
+              required
+            />
+            <div *ngIf="password.errors?.['passwordStrength'] && password.touched">
+                Password must be at least 8 characters long, include an uppercase letter, lowercase letter, number, and special character.
+              </div>
+              
+          
+    <br>
+        <button type="submit">Submit</button>
+    
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+

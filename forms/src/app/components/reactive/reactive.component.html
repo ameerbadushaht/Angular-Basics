@@ -1,0 +1,20 @@
+<h4>Reactive Form</h4>
+<br>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <label for="name">Enter Name</label>
+    <input type="text" name="name" id="name" formControlName="name">
+    <br>
+    <p *ngIf="userForm.get('name').errors?.['required'] && userForm.get('name').touched" style="color: red;">Name is required</p>
+    <label for="email">Enter Email</label>
+    <input type="email" name="email" id="email" formControlName="email">
+    <br>
+    <p *ngIf="userForm.controls['email'].errors?.['email'] && userForm.controls['email'].touched" style="color: red;">Enter valid email</p>
+    <p *ngIf="userForm.get('email').errors?.['required'] && userForm.get('email').touched" style="color: red;">Email is required</p>
+    <label for="password">Enter Password</label>
+    <input type="password" name="password" id="password" formControlName="password">
+    <br>
+    <p *ngIf="userForm.get('password').errors?.['required'] && userForm.get('password').touched" style="color: red;">Password is required</p>
+    <button type="submit">Submit</button>
+
+</form>
