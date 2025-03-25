@@ -16,19 +16,6 @@
     <br>
 
 
-    <h3>Skills:</h3>
-    <div formArrayName="skills">
-      <div *ngFor="let skill of skills.controls; let i = index" [formGroupName]="i">
-        <label>Skill:</label>
-        <input type="text" formControlName="name">
-        
-        <button type="button" (click)="removeSkill(i)">Remove</button>
-      </div>
-    </div>
-    
-    <button type="button" (click)="addSkill()">Add Skill</button>
-    
-
     <br><br>
     <p *ngIf="userForm.get('password').errors?.['required'] && userForm.get('password').touched" style="color: red;">Password is required</p>
     <button type="submit">Submit</button>
