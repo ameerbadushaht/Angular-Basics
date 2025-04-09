@@ -57,6 +57,12 @@ const routes: Routes = [
       },
     ],
   },
+
+
+  {
+    path:'blogs/:id',
+    component:BlogsComponent
+  }
 ];
 
 @NgModule({
