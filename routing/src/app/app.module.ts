@@ -12,6 +12,8 @@ import { ClothingComponent } from './components/shop/clothing/clothing.component
 import { MenComponent } from './components/shop/clothing/men/men.component';
 import { WomenComponent } from './components/shop/clothing/women/women.component';
 import { SessionComponent } from './components/session/session.component';
+import { QueryPComponent } from './components/query-p/query-p.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -28,11 +30,13 @@ import { SessionComponent } from './components/session/session.component';
     MenComponent,
     WomenComponent,
     SessionComponent,
+    QueryPComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
 
   ],
   providers: [],

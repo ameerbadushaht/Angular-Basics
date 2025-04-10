@@ -12,6 +12,7 @@ import { ShopComponent } from './components/shop/shop.component';
 import { ClothingComponent } from './components/shop/clothing/clothing.component';
 import { WomenComponent } from './components/shop/clothing/women/women.component';
 import { MenComponent } from './components/shop/clothing/men/men.component';
+import { QueryPComponent } from './components/query-p/query-p.component';
 
 const routes: Routes = [
   {
@@ -62,6 +63,10 @@ const routes: Routes = [
   {
     path:'blogs/:id',
     component:BlogsComponent
+  },
+  {
+    path:'query',
+    component:QueryPComponent
   }
 ];
 
