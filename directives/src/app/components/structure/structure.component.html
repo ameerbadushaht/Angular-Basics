@@ -1,0 +1,12 @@
+<!-- <p *ngIf="isShow">structure works!</p>
+
+<li *ngFor="let item of data">
+  <p>name : {{ item.name }}</p>
+</li> -->
+
+<!-- Swicth  -->
+
+<div [ngSwitch]="isShow">
+  <p *ngSwitchCase="true">structure working in true</p>
+  <p *ngSwitchCase="false">structure working in false </p>
+</div>

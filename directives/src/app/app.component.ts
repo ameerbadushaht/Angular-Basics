@@ -6,14 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-
-    // submit(){
-    //     console.log('form submitted');
-    // }
-
-
-    // name: string = '';
-
-
+  title = 'directives';
 }
