@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ParentComponent {
 
-    recieve(message:any){
-        console.log(message)
-
-    }
+  // child to parent
+  onNotify(message: string) {
+    alert(message);
+  }
 }
