@@ -6,13 +6,10 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./child.component.css']
 })
 export class ChildComponent {
-  @Input() name: string = '';
+ @Input() name: string = ''
 
-  // child to parent
-
-  @Output() notify = new EventEmitter<string>();
-
-  sendMessage() {
-    this.notify.emit('Hello from Child!');
-  }
+ @Output() notify = new EventEmitter<string>()
+ sendMessage() {
+   this.notify.emit(`Hello from child!`)
+ }
 }

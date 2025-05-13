@@ -5,21 +5,17 @@ import { Directive, HostBinding, HostListener } from '@angular/core';
 })
 export class HighlightDirective {
 
+firstColor='blue'
 
+@HostBinding('style.backgroundColor') backgroundColor: string;
 
-defaultColor = 'red';
+@HostListener('mouseenter') onMouseEnter() {
+  this.backgroundColor = 'red';
+}
 
-  constructor() { 
-    this.BackgroundColor=this.defaultColor
-  }
+@HostListener('mouseleave') onMouseLeave() {
+  this.backgroundColor = this.firstColor;
 
-  @HostBinding('style.backgroundColor') BackgroundColor: string = this.defaultColor;
-
-  @HostListener('mouseenter') onMouseEnter() {
-    this.BackgroundColor = 'yellow';
-  }
-  @HostListener('mouseleave') onMouseLeave() {
-    this.BackgroundColor = this.defaultColor;
-  }
+}
 
 }
