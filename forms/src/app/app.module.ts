@@ -7,13 +7,15 @@ import { TemplateFormComponent } from './components/template-form/template-form.
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PasswordStrengthDirective } from './validators/password-strength.directive';
 import { ReactiveComponent } from './components/reactive/reactive.component';
+import { Rdemo1Component } from './components/rdemo1/rdemo1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TemplateFormComponent,
     PasswordStrengthDirective,
-    ReactiveComponent
+    ReactiveComponent,
+    Rdemo1Component
   ],
   imports: [
     BrowserModule,

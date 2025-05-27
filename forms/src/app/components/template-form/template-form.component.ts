@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-template-form',
   templateUrl: './template-form.component.html',
@@ -13,7 +14,7 @@ export class TemplateFormComponent {
         password: ''
     }
 
-    onSubmit(){
-        console.log(this.templateForm);
+    onSubmit(form:any){
+        console.log(form);
     }
 }
