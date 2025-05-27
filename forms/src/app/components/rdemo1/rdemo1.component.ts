@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-rdemo1',
@@ -8,11 +8,27 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class Rdemo1Component {
 
-  userForm = new FormGroup({
-    name: new FormControl('',[Validators.required]),
-    email: new FormControl(''),
-    password: new FormControl('')
+
+  //formbuilder
+
+  constructor(private fb: FormBuilder) { }
+
+  // userForm = new FormGroup({
+  //   name: new FormControl('',[Validators.required]),
+  //   email: new FormControl(''),
+  //   password: new FormControl('',[Validators.required,Validators.minLength(8),Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])')])
+  // })
+
+
+  userForm = this.fb.group({
+    name: ['', [Validators.required]],
+    email: ['', [Validators.required, Validators.email]],
+    password: ['', [Validators.required, Validators.minLength(8)]]
   })
+
+
+
+
 
   // userData = {
   //   name: '',
