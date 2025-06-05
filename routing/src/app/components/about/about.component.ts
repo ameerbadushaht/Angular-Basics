@@ -10,8 +10,11 @@ import { AuthService } from 'src/app/services/auth.service';
 export class AboutComponent {
    constructor(private auth:AuthService, private router: Router) { }
 
-  logOut(){
+ logIn(){
+    this.auth.login();
+    this.router.navigate(['about']);
+  }
+ logOut(){
     this.auth.logout();
   }
-
 }
