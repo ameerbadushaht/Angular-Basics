@@ -61,7 +61,7 @@ const routes: Routes = [
 
 
   {
-    path:'blogs/:id',
+    path:'blogs/:febno',
     component:BlogsComponent
   },
   {
