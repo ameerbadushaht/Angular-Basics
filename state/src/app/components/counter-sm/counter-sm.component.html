@@ -1,0 +1,24 @@
+<div class="counter-container">
+  <h1 class="counter-title">NG Counter</h1>
+  
+  <div class="counter-display">
+    <span class="counter-value">{{ count$ | async }}</span>
+  </div>
+
+  <div class="counter-actions">
+    <button class="btn btn-increment" (click)="increment()">
+      <span>+</span>
+      Increment
+    </button>
+    
+    <button class="btn btn-decrement" (click)="decrement()">
+      <span>-</span>
+      Decrement
+    </button>
+    
+    <button class="btn btn-reset" (click)="reset()">
+      <span>↻</span>
+      Reset
+    </button>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+.counter-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background: #f8f9fa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.counter-title {
+  color: #3f51b5;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.counter-display {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.counter-value {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+.counter-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.btn span {
+  font-size: 1.2rem;
+}
+
+.btn-increment {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-increment:hover {
+  background-color: #3e8e41;
+}
+
+.btn-decrement {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-decrement:hover {
+  background-color: #d32f2f;
+}
+
+.btn-reset {
+  background-color: #ff9800;
+  color: white;
+}
+
+.btn-reset:hover {
+  background-color: #e68a00;
+}
